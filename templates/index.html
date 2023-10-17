@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowbite Flask</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+</head>
+<body class="bg-gray-700">
+    <div class="flex justify-center pt-10">
+      <div class="w-2/5 text-white">
+        <h1 class="text-bold text-center text-4xl">Valvular Heart Disease</h1>
+        <h2 class="text-medium text-center text-4xl">Detection System</h2>
+
+        <div class="my-5">
+          <div class="w-full h-[10rem]">
+          </div>
+        </div>
+
+        <div class="flex space-x-2 text-black items-center">
+          <div class="w-4/6">
+            <input type="file" class="w-full bg-white">
+          </div>
+          <div class="w-1/6">
+            <select name="" id="" class="w-full">
+              <option value="CNN">CNN</option>
+              <option value="LSTM">LSTM</option>
+              <option value="RNN">RNN</option>
+            </select>
+          </div>
+          <div class="w-1/6">
+            <button class="w-full bg-blue-500 text-white">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
