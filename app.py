@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request
+from flask_cors import CORS, cross_origin
 from werkzeug.utils import secure_filename
 import script as model
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Access-Control-Allow-Origin'
 
 @app.route("/")
-@app.route("/index")
 def index():
-	return render_template("index.html")
+  return "Hello world!"
 
 @app.route('/predict', methods = ['GET', 'POST'])
 def cek():
@@ -18,3 +20,4 @@ def cek():
 
 if __name__ == '__main__':
 	app.run(debug=True)
+  
