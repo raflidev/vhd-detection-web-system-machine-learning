@@ -1,11 +1,11 @@
-from flask import Flask, render_template, request
-from flask_cors import CORS, cross_origin
+from flask import Flask, request
+# from flask_cors import CORS, cross_origin
 from werkzeug.utils import secure_filename
 import script as model
 
 app = Flask(__name__)
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Access-Control-Allow-Origin'
+# cors = CORS(app)
+# app.config['CORS_HEADERS'] = 'Access-Control-Allow-Origin'
 
 @app.route("/")
 def index():
